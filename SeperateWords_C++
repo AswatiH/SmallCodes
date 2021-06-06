@@ -1,0 +1,28 @@
+#include <bits/stdc++.h>
+using namespace std;
+  
+void removeWord(string str)
+{
+    string word = "";
+    for (auto x : str) 
+    {
+        if (x == ' ')
+        {
+            cout << word << endl;
+            word = "";
+        }
+        else
+        {
+            word = word + x;
+        }
+    }
+    cout << word << endl;
+}
+  
+// Driver code
+int main()
+{
+    string str="SEPERATE WORDS IN A SENTENCE";
+    removeWord(str);
+    return 0;
+}
